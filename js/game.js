@@ -133,21 +133,24 @@ const crabCookApp = {
 
     this.interval = setInterval(() => {
       this.clear();
-      this.drawAll();
 
       this.generateEnemies();
       this.generateObstacles();
+
+      this.drawAll();
+
       this.updatePlayerStatus();
 
       this.clearAll();
 
-      this.frames > 5000 ? (this.frames = 0) : this.frames++;
+      this.frames > 5000 ? this.frames = 0 : this.frames++;
 
       this.isCollisionAll();
 
-      this.lives < 0 ? this.gameOver() : null;
+      this.lives < 0 && this.gameOver();
 
-      this.score === 30 ? this.youWin() : null;
+      this.score === 30 && this.youWin();
+      
     }, 1000 / this.FPS);
   },
 
