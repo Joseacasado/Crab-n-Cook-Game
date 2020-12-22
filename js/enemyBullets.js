@@ -10,7 +10,7 @@ class enemyBullets {
       y: enemyPos.y + enemySize.h,
     };
     this.bulletsInstance = new Image();
-    this.bulletsInstance.src = `images/${ bulletsImage }`;
+    this.bulletsInstance.src = `../images/${ bulletsImage }`;
     this.bulletsSpeed = {
       x: 5,
       y: 5,
