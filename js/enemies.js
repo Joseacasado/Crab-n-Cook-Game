@@ -52,7 +52,7 @@ class Enemy {
   shootToPlayer() {
     if (this.shootKnife === false && this.enemyPos.y > this.enemySize.h * 2) {
       this.bullets.push(
-        new enemyBullets(this.ctx, this.enemyPos, this.enemySize, "knife.png")
+        new enemyBullets(this.ctx, this.enemyPos, this.enemySize, "Knife.png")
       );
       this.shootKnife = true;
       let randomNum = Math.floor((Math.random() * (7 - 2)) + 2)
