@@ -1,0 +1,81 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  color: aliceblue;
+  background-image: url("../images/webBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Ranchers", cursive;
+  line-height: 1.5;
+  font-size: 5em;
+  border: 7px solid aliceblue;
+  border-radius: 5px;
+  background-color: rgba(218, 165, 32, 0.8);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.hero button {
+  font-size: 30px;
+  background-color: #fff;
+  color: goldenrod;
+  padding: 0.5em 1em;
+  border: 2px solid goldenrod;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin: 1em 0;
+  transition: all 0.5s;
+}
+
+.hero button:hover {
+  color: #fff;
+  background-color: olivedrab;
+  border: 2px solid #fff;
+}
+
+.hero p {
+  padding: 10px;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  background-color: rgba(218, 165, 32, 0.8);
+}
+
+.game-board {
+  display: none;
+  transition: all 0.5s;
+}
+
+.modal {
+  position: fixed;
+  top: 2em;
+  visibility: hidden;
+}
+
+.modal img {
+  width: 650px;
+  height: 550px;
+  border: 7px solid white;
+  box-shadow: 0 5px 5px rgba(253, 173, 0, 0.6),
+    -1px 6px 6px rgba(41, 18, 3, 0.3);
+}
+
+.modal p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5em;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ranchers&display=swap" rel="stylesheet">
+
+  <title>Crab'n'Cook | The Game</title>
+  <meta name="description" content="When a crab humilliates your father, there's only one possible path... revenge! Space Invaders Style, but in a beach with crabs and seagulls.">
+
+  <meta property="og:title" content="Crab'n'Cook | The Game" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="When a crab humilliates your father, there's only one possible path... revenge!" />
+  <meta property="og:url" content="https://joseacasado.github.io/crabncookgame/" />
+  <meta property="og:image" content="./images/InigoStory.jpg" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="200" />
+  <meta property="og:image:alt" content="Game description" />
+
+  <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+
+  <main>
+
+    <section class="hero">
+      <h1>Crab'n'Cook</h1>
+      <button id="start-btn">Start</button>
+      <div class="instructions">
+        <p>Use arrows to control the player.
+        <br><br>
+        Use "s" to shoot.
+        <br><br>
+        </p>
+        <p>
+          If you kill 30 enemies, you win.
+          <br><br>
+          If you have your lives down to zero and
+          <br><br>
+          receive another hit, you lose.
+          <br><br>
+          Good luck!
+        </p>
+      </div>
+    </section>
+
+    <div class="modal">
+      <img id="inigoStory" src="images\InigoStory.jpg" alt="story">
+      <br>
+      <p>Click on the image when you're ready</p>
+      <audio src="Sounds/Grasslands Theme.mp3"></audio>
+    </div>
+
+    
+    <!-- CANVAS   -->
+    
+    <section class="game-board">
+      <canvas id="my-canvas"></canvas>
+      <div style="display:none;">
+        <img id="lose" class="loseImage" src="images\YouLose.png" width="300" height="227">
+      </div>
+      <div style="display:none;">
+        <img id="win" class="winImage" src="images\YouWin.png" width="300" height="227">
+      </div>
+    </section>
+  </main>
+
+    
+
+    <!-- JS LINKS -->
+
+
+  <script type="text/javascript" src="js/playerBullets.js"></script>
+  <script type="text/javascript" src="js/enemyBullets.js"></script>
+  <script type="text/javascript" src="js/seagull.js"></script>
+  <script type="text/javascript" src="js/enemies.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/obstacles.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  
+</body>
+</html>
