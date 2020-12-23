@@ -38,11 +38,11 @@ class Enemy {
       this.enemyPos.y,
       this.enemySize.w,
       this.enemySize.h
-    );
-    this.bullets.forEach((elm) => elm.draw());
-
-    this.move();
-    this.shootToPlayer();
+      );
+      
+      this.move();
+      this.shootToPlayer();
+      this.bullets.forEach((elm) => elm.draw());
   }
 
   move() {
